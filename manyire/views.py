@@ -5,10 +5,10 @@ from django.shortcuts import render
 
 # Create your views here.
 
-from django.http import HttpResponse
+from django.shortcuts import render
 
-def index(request):
+def network_list(request):
 
-    return HttpResponse('Hello, Welcome at the Manyire Water Monitor Site')
+    return render(request, 'manyire/network_list.html', {})
 
 
